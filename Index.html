@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <script src="https://kit.fontawesome.com/fa09fa3219.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="Assets/Style.css">
+        <title>Mi portafolio</title>
+    </head>
+<body>
+    <header> 
+        <div class="header__menu">
+        <div class="logo">
+            <a href="#">
+                <img src="Assets/Imgs/logo_size_invert.jpg" alt="mylogo">
+            </a>
+        </div>
+        <button id="btn-menu"class="btn-menu" onclick="ShowMenu()"><i class="fas fa-bars"></i></button>
+        </div>
+        <nav id="menu" >     
+                <li><a href="#"><i class="fas fa-home"></i></a></li>
+                <li><a href="#yo">Quien soy yo?</a></li>
+                <li><a href="#know">Mis conocimientos</a></li>
+                <li><a href="#contact">Contactame</a></li>
+        </nav>
+    </header>
+
+    <div class="main" >
+        ​ <div class="wave wave_up">
+            <svg viewBox="0 0 1280 166" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path fill="rgba(255,255,255,1)" d="M 0 0 C 110 0 110 97 220 97 L 220 97 L 220 0 L 0 0 Z" stroke-width="0"></path>
+                <path fill="rgba(255,255,255,1)" d="M 219 97 C 318.5 97 318.5 9 418 9 L 418 9 L 418 0 L 219 0 Z" stroke-width="0"></path> 
+                <path fill="rgba(255,255,255,1)" d="M 417 9 C 518 9 518 95 619 95 L 619 95 L 619 0 L 417 0 Z" stroke-width="0"></path>
+                <path fill="rgba(255,255,255,1)" d="M 618 95 C 719 95 719 11 820 11 L 820 11 L 820 0 L 618 0 Z" stroke-width="0"></path>
+                <path fill="rgba(255,255,255,1)" d="M 819 11 C 930 11 930 88 1041 88 L 1041 88 L 1041 0 L 819 0 Z" stroke-width="0"></path>
+                <path fill="rgba(255,255,255,1)" d="M 1040 88 C 1160 88 1160 0 1280 0 L 1280 0 L 1280 0 L 1040 0 Z" stroke-width="0"></path>
+            </svg>
+        </div>
+
+        <div class="aboutme">
+            <div class="aboutme__img">
+                <img src="Assets/Imgs/logo_size.jpg" alt="logo-version-white" id="yo">
+            </div>
+            <div class="aboutme__description">
+             <h2 class="mydescription">Hola soy Danny,<br>soy un Developer <span class="typed"></span></h2>
+             <p>Soy un desarrollador de nivel Junior que busca siempre aprender cosas nuevas, por ahora e comenzado aprendiendo a crear desde aplicaciones web,aplicaciones de escritorio, creacion de paginas webs (backend y frontend), y tambien haciendo uso de base de datos como mysql.Mi sueño es aprender mucho mas y poder seguir mi sueño de trabajar como un desarrollador profesional.</p>
+            </div>
+        </div>
+
+        <div class="wave wave_down">
+            <svg viewBox="0 0 1280 166" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path fill="rgba(255,255,255,1)" d="M 0 0 C 110 0 110 97 220 97 L 220 97 L 220 0 L 0 0 Z" stroke-width="0"></path> 
+                <path fill="rgba(255,255,255,1)" d="M 219 97 C 318.5 97 318.5 9 418 9 L 418 9 L 418 0 L 219 0 Z" stroke-width="0"></path> 
+                <path fill="rgba(255,255,255,1)" d="M 417 9 C 518 9 518 95 619 95 L 619 95 L 619 0 L 417 0 Z" stroke-width="0"></path>
+                <path fill="rgba(255,255,255,1)" d="M 618 95 C 719 95 719 11 820 11 L 820 11 L 820 0 L 618 0 Z" stroke-width="0"></path>
+                <path fill="rgba(255,255,255,1)" d="M 819 11 C 930 11 930 88 1041 88 L 1041 88 L 1041 0 L 819 0 Z" stroke-width="0"></path>
+                <path fill="rgba(255,255,255,1)" d="M 1040 88 C 1160 88 1160 0 1280 0 L 1280 0 L 1280 0 L 1040 0 Z" stroke-width="0"></path>
+            </svg>
+        </div>
+
+        <div class="minislider" >
+           <div class="minislider__title">
+            <h2>Mis servicios</h2>
+           </div>
+           <div class="minislider__slider">
+               <div class="slides">
+                <div class="slide slide1" id="1" onclick="clicked(this)">
+                    <div class="slide__img">
+                        <img src="Assets/Imgs/backend.svg" alt="icon">
+                    </div>
+                    <h3>Dev<br>Backend</h3>
+                    <div class="slide__content">
+                    <p>Desarrollo de backend en los lenguajes de php, expessjs y java</p>
+                    </div>
+                    <div class="hover"></div>
+                </div>    
+                        
+                <div class="slide slide2" id="2" onclick="clicked(this)">
+                    <div class="slide__img">
+                        <img src="Assets/Imgs/front-end.svg" alt="icon">
+                    </div>
+                    <h3>Dev<br>Frontend</h3>
+                    <div class="slide__content">
+                        <p>Desarrollo de diseños y animaciones para un sitio web con html5, css3 y javascript</p>
+                    </div>
+                    <div class="hover"></div>
+                </div>
+                <div class="slide slide3" id="3" onclick="clicked(this)">
+                    <div class="slide__img">
+                        <img src="Assets/Imgs/application.svg" alt="icon">
+                    </div>
+                    <h3>Desktop Apps <br>Dev</h3>
+                    <div class="slide__content">
+                        <p>Desarrollo de aplicaciones web con reactjs</p>
+                    </div>
+                    <div class="hover"></div>
+                </div>
+                <div class="slide slide3" id="3" onclick="clicked(this)">
+                    <div class="slide__img">
+                        <img src="Assets/Imgs/python.svg" alt="icon">
+                    </div>
+                    <h3>Python<br>Dev</h3>
+                    <div class="slide__content">
+                        <p>Desarrollo de aplicaciones con python</p>
+                    </div>
+                    <div class="hover"></div>
+                </div>
+            </div>
+           </div>
+        </div>
+        <div class="myknowledges">
+            <div class="myknowledges__title">
+                <h2 id="know">Lenguajes de programacion aprendidos<br></h2>
+                <p>Nivel: Junior -><span> Semi Senior</span></p>
+            </div>
+                <div class="myknowledges__container">
+                    <div class="container__icon">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                        <div class="note"><p>No es un lenguaje de programación pero lo pongo aqui porque nose donde ponerlo XD</p></div> 
+                    </div>
+                    <div class="container__icon">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>Css3</span>
+                        <div class="note"><p>Tampoco es un lenguaje de programación</p></div> 
+                    </div>
+                    <div class="container__icon">
+                        <i class="fab fa-js-square"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="container__icon">
+                        <i class="fab fa-node-js"></i>
+                        <span>Nodejs</span>
+                        <div class="note"><p>Es un framework de JavaScript</p></div>
+                    </div>
+                    <div class="container__icon">
+                        <i class="fab fa-php"></i>
+                        <span>Php</span>
+                    </div>
+                    <div class="container__icon">
+                        <i class="fas fa-database"></i>
+                        <p>My<span>Sql</span></p>
+                    </div>
+                    <div class="container__icon">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="container__icon">
+                        <i class="fab fa-java"></i>
+                        <span>Java</span>
+                    </div>               
+                </div>
+        </div>
+        <div class="myprojects">
+            
+        
+        </div>
+    </div>
+
+    <!--==================FOOTER==============================-->
+    <div class="footer__top">
+        <svg viewBox="0 0 1280 110" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path fill="rgba(255, 255, 255, 1)" d="M 0 0 C 134 0 134 76 268 76 L 268 76 L 268 0 L 0 0 Z" stroke-width="0"></path> 
+            <path fill="rgba(255, 255, 255, 1)" d="M 267 76 C 452 76 452 5 637 5 L 637 5 L 637 0 L 267 0 Z" stroke-width="0"></path> 
+            <path fill="rgba(255, 255, 255, 1)" d="M 636 5 C 803.5 5 803.5 51 971 51 L 971 51 L 971 0 L 636 0 Z" stroke-width="0"></path>
+            <path fill="rgba(255, 255, 255, 1)" d="M 970 51 C 1111 51 1111 0 1252 0 L 1252 0 L 1252 0 L 970 0 Z" stroke-width="0"></path>
+            <path fill="rgba(255, 255, 255, 1)" d="M 1251 0 C 1265.5 0 1265.5 0 1280 0 L 1280 0 L 1280 0 L 1251 0 Z" stroke-width="0"></path>
+        </svg>
+    </div>
+    <footer>
+        <div class="contact" id="contact">
+            <p><i class="fas fa-envelope"></i> <small>drastick13pro@gmail.com</small></p>
+            <p><i class="fas fa-code-branch"></i> <small>Drastick17</small></p>
+        </div>
+        <div class="socialnetworks">
+            <p><i class="fab fa-facebook"></i> <small>Facebook</small><p>
+            <p><i class="fab fa-youtube"></i> <small>Youtube</small></p>
+            <p><i class="fab fa-twitter"></i> <small>Twiter</small></p>
+        </div>
+        <div class="sources">
+            <p>Gracias por los iconos a:<br></p>
+            <div>Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <div>Icons made by <a href="https://flat-icons.com/" title="Flat Icons">Flat Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        </div>
+        
+    <!--================JAVASCRIPT================================-->
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="Assets/Js/Main.js"></script>
+    <script src="Assets/Js/Type.js"></script>
+</body>
+</html>
